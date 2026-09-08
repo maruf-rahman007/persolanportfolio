@@ -40,6 +40,82 @@ export default function AboutPage() {
                 </div>
             </section>
 
+            {/* Internship Experience Section */}
+            <section style={{ marginTop: '5rem' }}>
+                <h2 style={{ fontFamily: 'var(--font-kalam)', fontSize: '2.5rem', marginBottom: '2rem', textAlign: 'center' }}>
+                    Work <span className="accent-text-red">Experience</span>
+                </h2>
+                <div className="hand-card" style={{ rotate: '-0.5deg', padding: '2.5rem' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.2rem' }}>
+                        <div>
+                            <h3 style={{ fontFamily: 'var(--font-kalam)', fontSize: '1.8rem', margin: 0, color: 'var(--foreground)' }}>
+                                Software Engineer Intern
+                            </h3>
+                            <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--accent-blue)', marginTop: '0.2rem' }}>
+                                AsthaIT
+                            </div>
+                        </div>
+                        <span style={{
+                            fontFamily: 'var(--font-kalam)',
+                            fontSize: '0.95rem',
+                            padding: '0.3rem 0.8rem',
+                            backgroundColor: '#f8f9fa',
+                            border: '1.5px dashed var(--accent-red)',
+                            borderRadius: '15px',
+                            fontWeight: 'bold',
+                            color: 'var(--accent-red)'
+                        }}>
+                            Internship
+                        </span>
+                    </div>
+
+                    <p style={{ fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '1.5rem', opacity: 0.9 }}>
+                        Architected and delivered high-performance, enterprise-grade full-stack features with a strong focus on backend maintainability, clean design patterns, and responsive user experiences.
+                    </p>
+
+                    <div style={{ marginBottom: '1.8rem' }}>
+                        <h4 style={{ fontFamily: 'var(--font-kalam)', fontSize: '1.3rem', marginBottom: '0.8rem', color: '#333' }}>
+                            Key Achievements & Impact:
+                        </h4>
+                        <ul style={{ paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.7rem', fontSize: '1rem', lineHeight: '1.6' }}>
+                            <li>
+                                <strong>Enterprise Backend Architecture:</strong> Designed and implemented scalable REST APIs in <strong>C#</strong> and <strong>.NET</strong> adhering strictly to <strong>Clean Architecture</strong> principles and the <strong>MediatR pattern (CQRS)</strong> for loose coupling and maintainability.
+                            </li>
+                            <li>
+                                <strong>High-Performance Data Layer:</strong> Modeled complex relational schemas and optimized data access operations using <strong>Entity Framework (EF) Core</strong> and <strong>PostgreSQL</strong>.
+                            </li>
+                            <li>
+                                <strong>Modern Reactive Frontend:</strong> Built dynamic, responsive frontends using <strong>TypeScript</strong> and <strong>Next.js</strong>, integrating <strong>TanStack Query (React Query)</strong> and <strong>Axios</strong> for asynchronous data fetching, caching, and state synchronization.
+                            </li>
+                            <li>
+                                <strong>Secure Core Services:</strong> Engineered end-to-end user <strong>Authentication & Authorization</strong> pipelines alongside automated transactional <strong>Email Notification Services</strong> for seamless user operations.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', paddingTop: '1.2rem', borderTop: '2px dashed #eee' }}>
+                        {[
+                            "C#",
+                            ".NET Core",
+                            "Clean Architecture",
+                            "MediatR Pattern",
+                            "EF Core",
+                            "PostgreSQL",
+                            "TypeScript",
+                            "Next.js",
+                            "TanStack Query",
+                            "Axios",
+                            "Authentication",
+                            "Email Services"
+                        ].map((skill) => (
+                            <span key={skill} style={{ fontSize: '0.8rem', padding: '0.25rem 0.65rem', border: '1px solid #ccc', borderRadius: '5px', backgroundColor: '#fafafa', fontWeight: 500 }}>
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Services Section */}
             <section style={{ marginTop: '5rem' }}>
                 <h2 style={{ fontFamily: 'var(--font-kalam)', fontSize: '2.5rem', marginBottom: '2rem', textAlign: 'center' }}>
